@@ -1,0 +1,88 @@
+
+body{
+  background-color: black;
+}
+header{
+  background-color:  #5b7989;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius:  10px;
+  display: flex;
+}
+header h1{
+  float: left;
+  margin: 30px 0px 0px 15px;
+  padding: 5px;
+  font-family: "Dancing Script";
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+
+footer{
+  background-color: #C6d5c5;
+  margin: 0px;
+
+}
+footer img{
+  width: 10%;
+}
+.links a{
+  margin: 50px 10px;
+  font-family: "Dancing Script";
+  color: white;
+}
+.links{
+ margin-left: 56%;
+ margin-top: 45px;
+}
+#Inicio{
+  text-decoration: none;
+}
+
+#Central img{
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+  padding: 20px 20px;
+}
+#Central{
+  background-color: #82c3a6;
+
+}
+#Secundario{
+  background-color: #d5c75f;
+  height: 450px;
+  border: solid 1px black;
+}
+#Izquierdo {
+  width: 50%;
+  height: 90%;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+#Derecho{
+  margin-top: 10px;
+  margin-left: 47%;
+  width: 41%;
+  height: 65%;
+  position: absolute;
+  left: 120px;
+}
+#Secundario div a{
+  font-family: "Dancing Script";
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#Link1{
+  margin-left: 2%;
+  padding: 250px;
+}
+#Link2{
+  margin-left: 12%;
+  padding: 250px;
+}
