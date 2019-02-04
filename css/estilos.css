@@ -9,6 +9,10 @@ header{
   position: relative;
   border-top-right-radius: 10px;
   border-top-left-radius:  10px;
+  -moz-border-top-right-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-top-rigth-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
   display: flex;
 }
 header h1{
@@ -16,18 +20,19 @@ header h1{
   margin: 30px 0px 0px 15px;
   padding: 5px;
   font-family: "Dancing Script";
-  font-size: 2em;
   color: white;
   text-shadow: 2px 2px #02010a;
 }
-
 footer{
   background-color: #C6d5c5;
   margin: 0px;
-
+  display: flex;
+  flex-direction: row;
+  font-family: "Dancing Script";
+  font-size: 1.2em;
 }
 footer img{
-  width: 10%;
+  width: 8%;
 }
 .links a{
   margin: 50px 10px;
@@ -45,9 +50,8 @@ footer img{
 #Central img{
   display: block;
   margin: auto;
-  width: 60%;
-  height: 60%;
   padding: 20px 20px;
+  width: 60%;
 }
 #Central{
   background-color: #82c3a6;
@@ -57,32 +61,150 @@ footer img{
   background-color: #d5c75f;
   height: 450px;
   border: solid 1px black;
+  display: flex;
+  flex-direction: row;
 }
 #Izquierdo {
-  width: 50%;
-  height: 90%;
-  margin-top: 10px;
-  margin-left: 30px;
+  width: 90%;
+  height: 80%;
+  margin-left: 20px;
+  border: solid 2px black;
+  transition: transform 2s;
+}
+#Izquierdo:hover{
+  transform: rotate(10deg);
+  border: solid 2px #82c3a6;
+  box-shadow: 2px 2px 10px #82c3a6;
 }
 #Derecho{
-  margin-top: 10px;
-  margin-left: 47%;
-  width: 41%;
-  height: 65%;
-  position: absolute;
-  left: 120px;
+  width: 95%;
+  height: 80%;
+  border: solid 2px black;
+  transition: transform 2s;
+  margin-right: 20px;
 }
+#Derecho:hover{
+  transform: translate(20px,-5px);
+  border: solid 2px #82c3a6;
+  box-shadow: 2px 2px 10px #82c3a6;
+}
+.retratos-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.paisajes-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 #Secundario div a{
   font-family: "Dancing Script";
   color: black;
   font-size: 1.3em;
   font-weight: bold;
 }
-#Link1{
-  margin-left: 2%;
-  padding: 250px;
+
+#Contacto{
+  width: 30%;
+  padding-top: : 10px;
 }
-#Link2{
-  margin-left: 12%;
-  padding: 250px;
+#Término{
+  width: 30%;
+  padding-top: 10px;
+}
+#Redes{
+width: 30%;
+padding-top: 6px 0px 0px 1px;
+}
+#Derechos{
+  float: right;
+  width: 30%;
+}
+@media screen and (max-width:900px) {
+    header{
+      width: 100%;
+      height: 100px;
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1{
+      font-size: 1.4em;
+    }
+    .links a{
+      margin: 25px 5px;
+
+    }
+    .links{
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    #contenido{
+      width: 100%;
+      margin:auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #Secundario{
+      display: flex;
+      flex-direction: column;
+
+    }
+    .retratos-div {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .paisajes-div {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #Central img{
+      width: 90%;
+    }
+    #Izquierdo{
+      width: 90%;
+      height: 80%;
+    }
+    #Derecho{
+      width: 90%;
+      height: 80%;
+      margin-left: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Contacto {
+    width: 100%;
+  }
+
+  #Término {
+    width: 100%;
+  }
+
+  #Redes {
+    width: 100%;
+  }
+
+  #Derechos {
+    width: 100%;
+  }
 }
