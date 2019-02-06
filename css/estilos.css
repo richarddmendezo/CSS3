@@ -72,8 +72,8 @@ img{
 }
 #Central{
   background-color: #82c3a6;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #Secundario{
   background-color: #d5c75f;
