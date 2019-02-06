@@ -1,5 +1,21 @@
+@keyframes rebote {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+
+}
 body{
   background-color: black;
+}
+#contenido{
+  width: 900px;
+  margin: auto;
 }
 header{
   background-color:  #5b7989;
@@ -8,34 +24,203 @@ header{
   position: relative;
   border-top-right-radius: 10px;
   border-top-left-radius:  10px;
+  -moz-border-top-right-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-top-rigth-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
   display: flex;
+  flex-direction: row;
+  animation: rebote 1s;
 }
-header h1{
-  float: left;
-  margin: 30px 0px 0px 15px;
-  padding: 5px;
+.titulo h1{
   font-family: "Dancing Script";
-  font-size: 2em;
   color: white;
   text-shadow: 2px 2px #02010a;
+  margin-right: 300px;
+}
+.menu, .titulo{
+  margin: auto;
+}
+.menu a{
+  margin-left: 10px;
+  font-family: "Dancing Script";
+  color: white;
 }
 footer{
   background-color: #C6d5c5;
   margin: 0px;
-
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Dancing Script";
+  font-size: 1.2em;
 }
 footer img{
-  width: 10%;
+  width: 8%;
 }
-.links a{
-  margin: 50px 10px;
-  font-family: "Dancing Script";
-  color: white;
-}
-.links{
- margin-left: 56%;
- margin-top: 45px;
+img{
+  box-shadow: 2px 2px #02010a;
 }
 #Paisajes{
   text-decoration: none;
+}
+#Galeria{
+  background-color: #d5c75f;
+  border: solid 1px black;
+}
+.Primera {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Segunda {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#Fila1 img{
+  width: 30%;
+  margin: 18px;
+  border: solid 1px black;
+}
+.efectoblur{
+  filter: blur(10px);
+}
+.efectoscale{
+  filter: grayscale(100%);
+}
+.efectosepia{
+  filter: sepia(90%);
+}
+#Fila2 img{
+  width: 30%;
+  margin: 18px;
+  border: solid 1px black;
+}
+#Contacto{
+  width: 30%;
+  padding-top: : 10px;
+}
+#Término{
+  width: 30%;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+#Redes{
+width: 30%;
+padding-top: 6px 0px 0px 1px;
+}
+#Derechos{
+  float: right;
+  width: 30%;
+  margin-left: 10px;
+}
+@media screen and (max-width:900px) {
+    header{
+      width: 100%;
+      height: 100px;
+      flex-direction: column;
+      text-align: center;
+    }
+    .titulo h1{
+      margin: auto;
+    }
+    .menu{
+      margin: auto;
+    }
+    #contenido{
+      width: 100%;
+      margin:auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #Galeria{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .Primera {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .Segunda {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    #Fila1 img{
+      width: 90%;
+    }
+    #Fila2 img{
+      width: 90%;
+    }
+    footer {
+      padding-left: 10px;
+      display: flex;
+      flex-direction: row;
+    }
+    #Contacto p{
+      font-size: 0.8em;
+    }
+    #Término {
+      width: 30%;
+      font-size: 1em;
+      margin-right: 5px;
+      padding-top: 0px;
+    }
+
+    #Redes {
+      width: 30%;
+      font-size: 1em;
+    }
+    #Redes img{
+      width: 10%;
+    }
+
+    #Derechos {
+      width: 30%;
+      font-size: 1em;
+    }
+}
+@media screen and (max-width:600px) {
+  footer {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Contacto {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  #Término {
+    width: 100%;
+    font-size: 1em;
+    margin-left: 0;
+  }
+
+  #Redes {
+    width: 100%;
+    font-size: 1em;
+  }
+  #Redes img{
+    width: 10%;
+  }
+
+  #Derechos {
+    width: 100%;
+    font-size: 1em;
+  }
 }
